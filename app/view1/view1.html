@@ -1,1 +1,11 @@
-<p>This is the partial for view 1.</p>
+<span>
+	<p>This is the partial for view 1.</p>
+	<form class="login-form">
+		<div>
+			<input type="text" placeholder="Name" ng-model="testForm.name">
+			<input type="email" placeholder="Email" ng-model="testForm.email">
+			<input type="password" placeholder="Password" ng-model="testForm.password">
+			<input type="button" ng-click="sendForm()" value="Submit">
+		</div>
+	</form>
+</span>

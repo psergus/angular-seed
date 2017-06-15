@@ -9,6 +9,14 @@ angular.module('myApp.view1', ['ngRoute'])
   });
 }])
 
-.controller('View1Ctrl', [function() {
+.controller('View1Ctrl', ['$scope', function($scope) {
+	$scope.testForm = {
+		name: '',
+		email: '',
+		password: ''
+	};
 
+	$scope.sendForm = () => {
+		console.log($scope.testForm);
+	}
 }]);

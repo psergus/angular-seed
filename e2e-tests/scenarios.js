@@ -23,6 +23,18 @@ describe('my app', function() {
         toMatch(/partial for view 1/);
     });
 
+    it('should render form', () => {
+
+    });
+
+    it('should render form input elements with name, email, password', () => {
+      
+    });
+
+    it('should console.log entered inputs for the form after I click Submit button', () => {
+      
+    });
+
   });
 
 
@@ -37,6 +49,5 @@ describe('my app', function() {
       expect(element.all(by.css('[ng-view] p')).first().getText()).
         toMatch(/partial for view 2/);
     });
-
   });
 });
